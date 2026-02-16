@@ -1,0 +1,17 @@
+agent:
+  id: "001"
+fuse:
+  directory: "/opt/CyberSafe/data"
+  mount_point: "/home/alex/CyberSafe"
+  options: "-f -d -o auto_unmount,allow_other"
+database:
+  host: "127.0.0.1"
+  user: "alex"
+  filekey: ""
+log:
+  file: "/opt/cybersafe/agent.log"
+  fuse: "/opt/cybersafe/fuse.log"
+  size: "5MB"
+  count: "3"
+  level: "trace"
+  flush_level: "trace"
